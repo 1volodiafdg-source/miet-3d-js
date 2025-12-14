@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.alert-info {
+    background: #f7fee7;
+    border: 1px solid #84cc16;
+
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+
+    font-size: 14px;
 }
