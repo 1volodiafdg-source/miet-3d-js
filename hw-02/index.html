@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HW-02 Flexbox</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <main class="page">
+            <section class="hero">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Заголовок —<br />о чем блок</h1>
+
+                        <p class="hero__text">
+                            Описание — основной смысл. Используйте 1–2
+                            предложения в 1–3 строки, если выравнивание по
+                            центру. При большем количестве текста используйте
+                            другой тип выравнивания контента
+                        </p>
+
+                        <div class="hero__actions">
+                            <a class="btn btn--primary" href="#">
+                                Кнопка призыва <span class="btn__arrow">→</span>
+                            </a>
+                            <a class="btn btn--outline" href="#"
+                                >Второй призыв</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="hero__media">
+                        <div class="hero__placeholder" aria-hidden="true">
+                            <div class="hero__placeholder-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards">
+                <h2 class="cards__title">Карточки</h2>
+
+                <div class="cards__grid">
+                    <article class="card">
+                        <div class="card__img" aria-hidden="true"></div>
+                        <div class="card__body">
+                            <h3 class="card__title">Карточка 1</h3>
+                            <p class="card__text">
+                                Описание карточки в 1–2 строки.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__img" aria-hidden="true"></div>
+                        <div class="card__body">
+                            <h3 class="card__title">Карточка 2</h3>
+                            <p class="card__text">
+                                Описание карточки в 1–2 строки.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__img" aria-hidden="true"></div>
+                        <div class="card__body">
+                            <h3 class="card__title">Карточка 3</h3>
+                            <p class="card__text">
+                                Описание карточки в 1–2 строки.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__img" aria-hidden="true"></div>
+                        <div class="card__body">
+                            <h3 class="card__title">Карточка 4</h3>
+                            <p class="card__text">
+                                Описание карточки в 1–2 строки.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="testimonials__inner">
+                    <div class="testimonials__kicker">ОТЗЫВЫ</div>
+                    <h2 class="testimonials__title">Кто любит нашу работу</h2>
+
+                    <div class="testimonials__row">
+                        <button
+                            class="t-nav t-nav--left"
+                            type="button"
+                            aria-label="Предыдущий отзыв"
+                        >
+                            ‹
+                        </button>
+
+                        <div class="testimonials__quote">
+                            Отличный опыт — мне правда очень понравилось.
+                            Спасибо команде: мечты становятся реальностью! Ценю
+                            ваш подход, внимательность и отношение к деталям.
+                        </div>
+
+                        <div class="testimonials__person">
+                            <div class="avatar" aria-hidden="true"></div>
+                            <div class="person">
+                                <div class="person__name">Ярослав Симонов</div>
+                                <div class="person__role">Директор</div>
+                            </div>
+                        </div>
+
+                        <button
+                            class="t-nav t-nav--right"
+                            type="button"
+                            aria-label="Следующий отзыв"
+                        >
+                            ›
+                        </button>
+                    </div>
+
+                    <div class="dots" aria-hidden="true">
+                        <span class="dot dot--active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="icon-cards">
+                <h2 class="icon-cards__title">Разделы поддержки</h2>
+
+                <div class="icon-cards__grid">
+                    <article class="icon-card">
+                        <div class="icon icon--user" aria-hidden="true"></div>
+                        <h3 class="icon-card__name">
+                            Управление<br />аккаунтом
+                        </h3>
+                    </article>
+
+                    <article class="icon-card icon-card--lift">
+                        <div class="icon icon--pay" aria-hidden="true"></div>
+                        <h3 class="icon-card__name">Оплата</h3>
+                    </article>
+
+                    <article class="icon-card">
+                        <div
+                            class="icon icon--delivery"
+                            aria-hidden="true"
+                        ></div>
+                        <h3 class="icon-card__name">Доставка</h3>
+                    </article>
+
+                    <article class="icon-card">
+                        <div class="icon icon--box" aria-hidden="true"></div>
+                        <h3 class="icon-card__name">Проблема<br />с товаром</h3>
+                    </article>
+
+                    <article class="icon-card">
+                        <div class="icon icon--refund" aria-hidden="true"></div>
+                        <h3 class="icon-card__name">Возврат<br />и деньги</h3>
+                    </article>
+
+                    <article class="icon-card">
+                        <div class="icon icon--shield" aria-hidden="true"></div>
+                        <h3 class="icon-card__name">Гарантии<br />и условия</h3>
+                    </article>
+                </div>
+
+                <div class="icon-cards__dark">
+                    <div class="icon-cards__grid icon-cards__grid--dark">
+                        <article class="icon-card icon-card--dark">
+                            <div
+                                class="icon icon--user"
+                                aria-hidden="true"
+                            ></div>
+                            <h3 class="icon-card__name">
+                                Управление<br />аккаунтом
+                            </h3>
+                        </article>
+
+                        <article
+                            class="icon-card icon-card--dark icon-card--lift"
+                        >
+                            <div
+                                class="icon icon--pay"
+                                aria-hidden="true"
+                            ></div>
+                            <h3 class="icon-card__name">Оплата</h3>
+                        </article>
+
+                        <article class="icon-card icon-card--dark">
+                            <div
+                                class="icon icon--delivery"
+                                aria-hidden="true"
+                            ></div>
+                            <h3 class="icon-card__name">Доставка</h3>
+                        </article>
+
+                        <article class="icon-card icon-card--dark">
+                            <div
+                                class="icon icon--box"
+                                aria-hidden="true"
+                            ></div>
+                            <h3 class="icon-card__name">
+                                Проблема<br />с товаром
+                            </h3>
+                        </article>
+
+                        <article class="icon-card icon-card--dark">
+                            <div
+                                class="icon icon--refund"
+                                aria-hidden="true"
+                            ></div>
+                            <h3 class="icon-card__name">
+                                Возврат<br />и деньги
+                            </h3>
+                        </article>
+
+                        <article class="icon-card icon-card--dark">
+                            <div
+                                class="icon icon--shield"
+                                aria-hidden="true"
+                            ></div>
+                            <h3 class="icon-card__name">
+                                Гарантии<br />и условия
+                            </h3>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
